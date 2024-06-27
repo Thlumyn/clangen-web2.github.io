@@ -6,8 +6,8 @@ permissions:
   contents: write
 
 jobs:
-  build_ubuntu_22_04:
-    runs-on: ubuntu-22.04
+  build_ubuntu_latest:
+    runs-on: ubuntu-latest
     env:
       gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
       gpg_private_key_passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
