@@ -135,10 +135,7 @@ class Sprites:
             'fademask', 'fadestarclan', 'fadedarkforest',
             'symbols'
         ]:
-            if 'lineart' in x and game.config['fun']['april_fools']:
-                self.spritesheet(f"sprites/aprilfools{x}.png", x)
-            else:
-                self.spritesheet(f"sprites/{x}.png", x)
+            self.spritesheet(f"sprites/{x}.png", x)
 
         # Line art
         self.make_group('lineart', (0, 0), 'lines')

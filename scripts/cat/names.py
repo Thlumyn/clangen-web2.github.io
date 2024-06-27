@@ -186,8 +186,6 @@ class Name:
         # then suffixes based on ages (fixes #2004, just trust me)
         if self.status in self.names_dict["special_suffixes"] and not self.specsuffix_hidden:
             return self.prefix + self.names_dict["special_suffixes"][self.status]
-        if game.config['fun']['april_fools']:
-            return self.prefix + 'egg'
         return self.prefix + self.suffix
 
 
