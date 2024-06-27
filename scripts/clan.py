@@ -39,7 +39,7 @@ class Clan:
 
     """
 
-    BIOME_TYPES = ["Forest", "Plains", "Mountainous", "Beach"]
+    BIOME_TYPES = ["Forest", "Mountainous"]
 
     CAT_TYPES = [
         "newborn",

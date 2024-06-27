@@ -1264,7 +1264,6 @@
     {
         "event_id": "multi_injury_anysprain2",
         "location": [
-            "plains",
             "forest"
         ],
         "season": [
@@ -1286,7 +1285,6 @@
     {
         "event_id": "multi_injury_multikitfrostbite1",
         "location": [
-            "plains",
             "forest",
             "mountainous"
         ],
@@ -1333,7 +1331,6 @@
     {
         "event_id": "multi_injury_anykiteagle1",
         "location": [
-            "plains",
             "forest",
             "mountainous"
         ],
@@ -1400,7 +1397,6 @@
     {
         "event_id": "multi_injury_anykithawk1",
         "location": [
-            "plains",
             "forest",
             "mountainous"
         ],
@@ -1471,7 +1467,6 @@
     {
         "event_id": "multi_injury_multiwaterinthelungs1",
         "location": [
-            "plains",
             "forest",
             "mountainous"
         ],
@@ -1558,7 +1553,6 @@
     {
         "event_id": "multi_injury_leafbarebrokenbone1",
         "location": [
-            "plains",
             "mountainous",
             "forest"
         ],
@@ -1599,7 +1593,6 @@
     {
         "event_id": "multi_injury_anybrokenbone1",
         "location": [
-            "plains",
             "mountainous"
         ],
         "season": [
@@ -1634,7 +1627,6 @@
     {
         "event_id": "multi_injury_anysmallcut1",
         "location": [
-            "beach",
             "mountainous",
             "forest"
         ],
@@ -1662,7 +1654,6 @@
     {
         "event_id": "multi_injury_anybruisestree1",
         "location": [
-            "beach",
             "mountainous",
             "forest"
         ],
@@ -1690,7 +1681,6 @@
     {
         "event_id": "multi_injury_anybruisesshowoff1",
         "location": [
-            "beach",
             "forest",
             "mountainous"
         ],
@@ -1773,7 +1763,6 @@
         "event_id": "gen_injury_cliffbreak1",
         "location": [
             "mountainous",
-            "beach",
             "forest"
         ],
         "season": [
@@ -1890,8 +1879,7 @@
     {
         "event_id": "gen_injury_sprain_anymultiage6",
         "location": [
-            "forest:camp1_camp2_camp4",
-            "plains:camp1_camp3"
+            "forest:camp1_camp2_camp4"
         ],
         "season": [
             "newleaf",

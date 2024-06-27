@@ -2500,7 +2500,7 @@ class ProfileScreen(Screens):
         if game.settings["dark mode"]:
             light_dark = "dark"
 
-        available_biome = ["Forest", "Mountainous", "Plains", "Beach"]
+        available_biome = ["Forest", "Mountainous"]
         biome = game.clan.biome
 
         if biome not in available_biome:
@@ -2514,7 +2514,7 @@ class ProfileScreen(Screens):
             "resources/images/platforms.png"
         ).convert_alpha()
 
-        order = ["beach", "forest", "mountainous", "nest", "plains", "SC/DF"]
+        order = ["forest", "mountainous", "nest", "SC/DF"]
 
         biome_platforms = platformsheet.subsurface(
             pygame.Rect(0, order.index(biome) * 70, 640, 70)

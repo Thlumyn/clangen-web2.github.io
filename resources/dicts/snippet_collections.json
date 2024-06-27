@@ -71,13 +71,6 @@
         ["the forest folding in on itself"]
 
       ],
-      "plains": [
-        ["a blood soaked field"]
-
-      ],
-      "beach": [
-        
-      ],
       "mountainous": [
 
       ]
@@ -108,12 +101,6 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
       "mountainous": [
 
       ]
@@ -132,13 +119,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     },
@@ -156,13 +137,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     },
@@ -176,13 +151,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     }
@@ -225,13 +194,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     },
@@ -243,13 +206,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     },
@@ -262,13 +219,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     },
@@ -283,13 +234,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     },
@@ -300,13 +245,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     }
@@ -382,13 +321,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     },
@@ -402,13 +335,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     },
@@ -440,13 +367,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     },
@@ -467,13 +388,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     },
@@ -486,13 +401,7 @@
       "forest": [
 
       ],
-      "plains": [
-
-      ],
-      "beach": [
-
-      ],
-      "mountainous": [
+"mountainous": [
 
       ]
     }
@@ -519,28 +428,6 @@
       ["The Old Forests of the Ancestors", "The Forest's Origin", "The First Seed", "The Squirrel Who Planted the Forest"],
       ["The Star Bugs"],
       ["The Sun-drown Place"]
-
-    ],
-    "plains": [
-      ["The Cat Who Dug a Tunnel Through The World", "The Blind Hunter Who Saved The Clan", "The Cat Without a Song",
-        "The Cat Who Carried The Sun", "The Cat Made From The Earth", "The Cats Made of Light", "The Great Worm-cat",
-        "The Cats Made of Shadow"],
-      ["the Thunderbeasts"],
-      ["How The Great Skytowers Came To Be"],
-      ["The Metal Trees of the Twolegs"],
-      ["The Weasel's Lie"],
-      ["The Sun-drown Place"]
-
-    ],
-    "beach": [
-      ["The Cursed Cat", "The Cat Who Carried The Sun", "The Cat Who Swam Over The Sea", "The Fish Who Became a Cat",
-        "The Cat Who Spoke To Fish", "The Cats Made of Shadow"],
-      ["The Dolphin's Farewell"],
-      ["The Dead's Token"],
-      ["The Ocean's Tears", "The Crying Sky"],
-      ["The Singing Shell"],
-      ["The Moving Sands"],
-      ["The Ghosts of The Sea", "The Ghost Who Was Trapped In a Pool"]
 
     ],
     "mountainous": [

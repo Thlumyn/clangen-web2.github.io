@@ -446,7 +446,7 @@
     },
     {
         "event_id": "gen_death_murder_anymed4",
-        "location": ["forest", "plains", "beach"],
+        "location": ["forest"],
         "season": [
             "any"
         ],
@@ -1914,7 +1914,7 @@
     },
     {
         "event_id": "gen_death_bury_any1",
-        "location": ["beach", "plains", "forest"],
+        "location": ["forest"],
         "season": [
             "any"
         ],
@@ -1932,7 +1932,7 @@
     },
     {
         "event_id": "gen_death_bury_any2",
-        "location": ["plains", "forest", "beach"],
+        "location": ["forest"],
         "season": [
             "any"
         ],
@@ -1972,7 +1972,7 @@
     },
     {
         "event_id": "gen_death_freeze_leafbare1",
-        "location": ["mountainous", "forest", "plains"],
+        "location": ["mountainous", "forest"],
         "season": [
             "leaf-bare"
         ],
@@ -1992,7 +1992,7 @@
     },
     {
         "event_id": "gen_death_freeze_leafbare2",
-        "location": ["mountainous", "forest", "plains"],
+        "location": ["mountainous", "forest"],
         "season": [
             "leaf-bare"
         ],
@@ -2029,7 +2029,7 @@
     },
     {
         "event_id": "gen_death_bury_any3",
-        "location": ["plains", "forest"],
+        "location": ["forest"],
         "season": [
             "any"
         ],
@@ -2441,7 +2441,7 @@
     },
     {
         "event_id": "gen_death_bury_newleaf1",
-        "location": ["plains", "mountainous"],
+        "location": ["mountainous"],
         "season": [
             "newleaf"
         ],
@@ -2461,7 +2461,7 @@
     },
     {
         "event_id": "gen_death_cliff_any1",
-        "location": ["mountainous", "beach", "forest"],
+        "location": ["mountainous", "forest"],
         "season": [
             "any"
         ],
@@ -2486,7 +2486,7 @@
     {
         "event_id": "gen_death_cliff_anylead1",
         "location": [
-            "mountainous", "forest", "beach"
+            "mountainous", "forest"
         ],
         "season": [
             "any"
@@ -2509,7 +2509,7 @@
     },
     {
         "event_id": "gen_death_murder_anycliff1",
-        "location": ["beach", "mountainous", "forest"],
+        "location": ["mountainous", "forest"],
         "season": [
             "any"
         ],
@@ -2568,7 +2568,7 @@
     },
     {
         "event_id": "gen_death_murder_anycliff2",
-        "location": ["beach", "mountainous", "forest"],
+        "location": ["mountainous", "forest"],
         "season": [
             "any"
         ],
@@ -2627,7 +2627,7 @@
     },
     {
         "event_id": "gen_death_war_any5",
-        "location": ["mountainous", "forest", "beach"],
+        "location": ["mountainous", "forest"],
         "season": [
             "any"
         ],
@@ -2653,7 +2653,7 @@
     },
     {
         "event_id": "gen_death_hawk_any1",
-        "location": ["forest:camp1_camp4", "plains:camp1_camp3", "mountainous:camp1_camp4", "beach:camp1_camp3"],
+        "location": ["forest:camp1_camp4", "mountainous:camp1_camp4"],
         "season": [
             "any"
         ],
@@ -2679,7 +2679,7 @@
     },
     {
         "event_id": "gen_death_hawk_any2",
-        "location": ["forest:camp1_camp4", "plains:camp1_camp3", "mountainous:camp1_camp4", "beach:camp1_camp3"],
+        "location": ["forest:camp1_camp4", "mountainous:camp1_camp4"],
         "season": [
             "any"
         ],
@@ -2752,7 +2752,7 @@
     },
     {
         "event_id": "gen_death_eagle_anylead3",
-        "location": ["forest:camp1_camp4", "plains:camp1_camp3", "mountainous:camp1_camp4", "beach:camp1_camp3"],
+        "location": ["forest:camp1_camp4", "mountainous:camp1_camp4"],
         "season": [
             "any"
         ],
@@ -2775,7 +2775,7 @@
     {
         "event_id": "gen_death_river_multiriver2",
         "location": [
-            "forest", "mountainous", "plains", "wetlands"
+            "forest", "mountainous"
         ],
         "season": [
             "greenleaf",
@@ -2853,7 +2853,7 @@
     },
     {
         "event_id": "gen_death_drown_multi2",
-        "location": ["plains", "forest", "mountainous"],
+        "location": ["forest", "mountainous"],
         "season": [
             "leaf-fall",
             "newleaf",
@@ -3611,7 +3611,7 @@
     {
         "event_id": "gen_death_flood_multilead1",
         "location": [
-            "forest", "mountainous", "plains", "beach", "wetlands"
+            "forest", "mountainous"
         ],
         "season": [
             "greenleaf",
@@ -3638,7 +3638,7 @@
     },
     {
         "event_id": "gen_death_tree_any1",
-        "location": [ "beach", "forest", "mountainous" ],
+        "location": ["forest", "mountainous" ],
         "season": [
             "any"
         ],
@@ -5147,7 +5147,7 @@
     },
     {
         "event_id": "gen_death_murder_anyleader4",
-        "location": ["beach", "forest", "mountainous", "wetlands", "plains"],
+        "location": ["forest", "mountainous"],
         "season": [
             "any"
         ],
@@ -5520,7 +5520,7 @@
     {
         "event_id": "gen_death_drown_leafbarekit1",
         "location": [
-            "forest", "plains", "mountainous", "beach", "wetlands"
+            "forest", "mountainous"
         ],
         "season": [
             "leaf-bare"
@@ -5596,7 +5596,7 @@
     {
         "event_id": "gen_death_mouse_anykit1",
         "location": [
-            "forest", "plains", "mountainous", "wetlands"
+            "forest", "mountainous"
         ],
         "season": [
             "any"
@@ -5618,7 +5618,7 @@
     {
         "event_id": "gen_death_shrew_anykit",
         "location": [
-            "forest", "plains", "mountainous", "wetlands"
+            "forest", "mountainous"
         ],
         "season": [
             "any"
@@ -5641,7 +5641,7 @@
     },
   {
     "event_id": "multi_death_massdeath_flood1",
-    "location": ["forest", "beach", "plains"],
+    "location": ["forest"],
     "season": ["newleaf"],
     "sub_type": ["mass_death"],
     "tags": [],
@@ -5657,7 +5657,7 @@
   },
   {
     "event_id": "multi_death_massdeath_fire1",
-    "location": ["forest:camp1_camp2", "plains:camp1_camp3", "beach:camp1_camp3", "mountainous:camp4"],
+    "location": ["forest:camp1_camp2", "mountainous:camp4"],
     "season": ["greenleaf"],
     "sub_type": ["mass_death"],
     "tags": [],

@@ -2,35 +2,27 @@ import json as ujson
 import os
 import re
 
-death_beach = []
 death_forest = []
 death_general = []
 death_mountainous = []
-death_plains = []
 
-injury_beach = []
 injury_forest = []
 injury_general = []
 injury_mountainous = []
-injury_plains = []
 
-new_beach = []
 new_forest = []
 new_general = []
 new_mountainous = []
-new_plains = []
 
-misc_beach = []
 misc_forest = []
 misc_general = []
 misc_mountainous = []
-misc_plains = []
 
 def reformat(path):
     if "Copy" not in path:
         return
     not_allowed = ["fresh", "nutrition", "disasters", "ceremony", "dislike", "jealousy", "witness",
-                   "template", "reactions", "beach.json", "forest.json", "new_general.json", "mountainous.json", "plains.json"]
+                   "template", "reactions", "forest.json", "new_general.json", "mountainous.json"]
     for item in not_allowed:
         if item in path:
             return
@@ -61,14 +53,10 @@ def reformat(path):
 
         if "general" not in path:
             new_format["biome"] = []
-            if "beach" in path:
-                new_format["biome"].append("beach")
             if "forest" in path:
                 new_format["biome"].append("forest")
             if "mountainous" in path:
                 new_format["biome"].append("mountainous")
-            if "plains" in path:
-                new_format["biome"].append("plains")
 
         if "camp" in event:
             new_format["camp"] = []
@@ -548,24 +536,14 @@ def reformat(path):
         dict_text = dict_text.replace("\/", "/")  # ujson tries to escape "/", but doesn't end up doing a good job.
 
         if "injury" in path:
-            if "beach" in path:
-                injury_beach.append(dict_text)
             if "forest" in path:
                 injury_forest.append(dict_text)
             if "general" in path:
                 injury_general.append(dict_text)
             if "mountainous" in path:
                 injury_mountainous.append(dict_text)
-            if "plains" in path:
-                injury_plains.append(dict_text)
 
 
-    if injury_beach:
-        string = ""
-        for event in injury_beach:
-            string = string + event
-        with open("injury/beach.json", "w") as write_file:
-            write_file.write(string)
     if injury_forest:
         string = ""
         for event in injury_forest:
@@ -583,12 +561,6 @@ def reformat(path):
         for event in injury_mountainous:
             string = string + event
         with open("injury/mountainous.json", "w") as write_file:
-            write_file.write(string)
-    if injury_plains:
-        string = ""
-        for event in injury_plains:
-            string = string + event
-        with open("injury/plains.json", "w") as write_file:
             write_file.write(string)
 
 

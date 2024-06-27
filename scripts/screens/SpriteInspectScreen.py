@@ -540,7 +540,7 @@ class SpriteInspectScreen(Screens):
         if game.settings["dark mode"]:
             light_dark = "dark"
 
-        available_biome = ["Forest", "Mountainous", "Plains", "Beach"]
+        available_biome = ["Forest", "Mountainous"]
         biome = game.clan.biome
 
         if biome not in available_biome:
@@ -554,7 +554,7 @@ class SpriteInspectScreen(Screens):
             "resources/images/platforms.png"
         ).convert_alpha()
 
-        order = ["beach", "forest", "mountainous", "nest", "plains", "SC/DF"]
+        order = ["forest", "mountainous", "nest", "SC/DF"]
 
         offset = 0
         if light_dark == "light":

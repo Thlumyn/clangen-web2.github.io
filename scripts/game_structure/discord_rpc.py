@@ -105,7 +105,7 @@ class _DiscordRPC(threading.Thread):
                 img_str = "discord"  # fallback incase the game isn't loaded yet
                 img_text = "Clangen!!"
 
-            # Example: beach_greenleaf_camp1_dark
+            # Example: forest_greenleaf_camp1_dark
 
             if game.clan:
                 clan_name = f"{game.clan.name}Clan"

@@ -3757,23 +3757,6 @@
             }
         }
     },
-    "#plains_biome_button": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/plains.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/plains_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/plains_hover.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/plains_unavailable.png"
-            }
-        }
-    },
     "#classic_tab": {
         "prototype": "#image_button",
         "images": {
@@ -3822,23 +3805,6 @@
             },
             "disabled_image": {
                 "path": "resources/images/buttons/grotto_camp_unavailable.png"
-            }
-        }
-    },
-    "#beach_biome_button": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/beach.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/beach_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/beach_hover.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/beach_unavailable.png"
             }
         }
     },
