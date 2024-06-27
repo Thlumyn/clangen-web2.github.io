@@ -17,4 +17,4 @@ jobs:
       - name: install dependencies
         run: poetry install --with test
       - name: Run Pylint
-        run: poetry run pylint --recursive=y --errors-only "$PWD"
+        run: poetry run pylint --errors-only $(git ls-files '*.py') 
