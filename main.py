@@ -28,7 +28,6 @@ if not getattr(sys, "frozen", False):
         "pygame",
         "pygame_gui",
         "platformdirs",
-        "pgpy",
         "requests",
         "strenum",
     ]
@@ -66,14 +65,6 @@ from scripts.housekeeping.version import get_version_info, VERSION_NAME
 directory = os.path.dirname(__file__)
 if directory:
     os.chdir(directory)
-
-
-if os.path.exists("auto-updated"):
-    print("Clangen starting, deleting auto-updated file")
-    os.remove("auto-updated")
-    shutil.rmtree("Downloads", ignore_errors=True)
-    print("Update Complete!")
-    print("New version: " + get_version_info().version_number)
 
 
 setup_data_dir()
@@ -158,7 +149,6 @@ print("Running on commit " + get_version_info().version_number)
 from scripts.game_structure.load_cat import load_cats, version_convert
 from scripts.game_structure.windows import SaveCheck
 from scripts.game_structure.game_essentials import game, MANAGER, screen
-from scripts.game_structure.discord_rpc import _DiscordRPC
 from scripts.cat.sprites import sprites
 from scripts.clan import clan_class
 from scripts.utility import (
@@ -179,10 +169,6 @@ from scripts.screens.all_screens import (
 # P Y G A M E
 clock = pygame.time.Clock()
 pygame.display.set_icon(pygame.image.load("resources/images/icon.png"))
-
-game.rpc = _DiscordRPC("1076277970060185701", daemon=True)
-game.rpc.start()
-game.rpc.start_rpc.set()
 
 # LOAD cats & clan
 finished_loading = False

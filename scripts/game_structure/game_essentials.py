@@ -181,8 +181,6 @@ class Game:
     config = {}
     prey_config = {}
 
-    rpc = None
-
     is_close_menu_open = False
 
     def __init__(self, current_screen="start screen"):

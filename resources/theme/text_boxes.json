@@ -209,14 +209,6 @@
             "size": "24"
         }
     },
-    "#update_popup_title": {
-        "prototype": "#text_box",
-        "font": {
-            "name": "notosans",
-            "size": "30",
-            "bold": "1"
-        }
-    },
     "#changelog_popup_title": {
         "prototype": "#text_box",
         "misc": {

@@ -9,7 +9,6 @@ import pygame
 import pygame_gui
 import ujson
 
-from scripts.game_structure.discord_rpc import _DiscordRPC
 from scripts.game_structure.game_essentials import game, screen_x, screen_y, MANAGER
 from scripts.game_structure.ui_elements import UIImageButton
 from scripts.game_structure.windows import SaveError
@@ -143,16 +142,6 @@ class SettingsScreen(Screens):
                         game.switch_setting(key)
                     self.settings_changed = True
                     self.update_save_button()
-                    if self.sub_menu == 'general' and event.ui_element is self.checkboxes['discord']:
-                        if game.settings['discord']:
-                            print("Starting Discord RPC")
-                            game.rpc = _DiscordRPC("1076277970060185701",
-                                                   daemon=True)
-                            game.rpc.start()
-                            game.rpc.start_rpc.set()
-                        else:
-                            print("Stopping Discord RPC")
-                            game.rpc.close()
 
                     opens = {
                         "general": self.open_general_settings,

@@ -210,9 +210,6 @@
             "size": "12"
         }
     },
-    "#update_popup_title": {
-        "prototype": "#text_box_30"
-    },
     "#changelog_popup_title": {
         "prototype": "#text_box",
         "misc": {

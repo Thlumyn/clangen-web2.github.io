@@ -32,16 +32,13 @@ from scripts.game_structure.game_essentials import (
     MANAGER,
 )
 from scripts.game_structure.ui_elements import UIImageButton
-from scripts.game_structure.windows import UpdateAvailablePopup, ChangelogPopup
+from scripts.game_structure.windows import ChangelogPopup
 from scripts.utility import scale, quit  # pylint: disable=redefined-builtin
 from .Screens import Screens
 from ..housekeeping.datadir import get_data_dir, get_cache_dir
-from ..housekeeping.update import has_update, UpdateChannel, get_latest_version_number
 from ..housekeeping.version import get_version_info
 
 logger = logging.getLogger(__name__)
-has_checked_for_update = False
-update_available = False
 
 
 class StartScreen(Screens):
@@ -91,8 +88,6 @@ class StartScreen(Screens):
                 self.open_data_directory_button.kill()
                 # game.switches['error_message'] = ''
                 # game.switches['traceback'] = ''
-            elif event.ui_element == self.update_button:
-                UpdateAvailablePopup(game.switches["last_screen"])
             elif event.ui_element == self.quit:
                 quit(savesettings=False, clearevents=False)
             elif event.ui_element == self.social_buttons["discord_button"]:
@@ -148,7 +143,6 @@ class StartScreen(Screens):
         self.settings_button.kill()
         self.error_label.kill()
         self.warning_label.kill()
-        self.update_button.kill()
         self.quit.kill()
         self.closebtn.kill()
         for btn in self.social_buttons:
@@ -269,64 +263,6 @@ class StartScreen(Screens):
         self.error_gethelp.hide()
         self.open_data_directory_button.hide()
         self.closebtn.hide()
-
-        self.update_button = UIImageButton(
-            scale(pygame.Rect((1154, 50), (382.5, 75))),
-            "",
-            object_id="#update_button",
-            manager=MANAGER,
-        )
-        self.update_button.visible = 0
-
-        try:
-            global has_checked_for_update
-            global update_available
-            if (
-                not get_version_info().is_source_build
-                and not get_version_info().is_itch
-                and get_version_info().upstream.lower()
-                == "ClanGenOfficial/clangen".lower()
-                and game.settings["check_for_updates"]
-                and not has_checked_for_update
-            ):
-                if has_update(UpdateChannel(get_version_info().release_channel)):
-                    update_available = True
-                    show_popup = True
-                    if os.path.exists(f"{get_cache_dir()}/suppress_update_popup"):
-                        with open(
-                            f"{get_cache_dir()}/suppress_update_popup", "r"
-                        ) as read_file:
-                            if read_file.readline() == get_latest_version_number():
-                                show_popup = False
-
-                    if show_popup:
-                        UpdateAvailablePopup(
-                            game.switches["last_screen"], show_checkbox=True
-                        )
-
-                has_checked_for_update = True
-
-            if update_available:
-                self.update_button.visible = 1
-        except (RequestException, Timeout):
-            logger.exception("Failed to check for update")
-            has_checked_for_update = True
-
-        if game.settings["show_changelog"]:
-            show_changelog = True
-            lastCommit = "0000000000000000000000000000000000000000"
-            if os.path.exists(f"{get_cache_dir()}/changelog_popup_shown"):
-                with open(f"{get_cache_dir()}/changelog_popup_shown") as read_file:
-                    lastCommit = read_file.readline()
-                    if lastCommit == get_version_info().version_number:
-                        show_changelog = False
-
-            if show_changelog:
-                ChangelogPopup(game.switches["last_screen"])
-                with open(
-                    f"{get_cache_dir()}/changelog_popup_shown", "w"
-                ) as write_file:
-                    write_file.write(get_version_info().version_number)
 
         self.warning_label = pygame_gui.elements.UITextBox(
             "Warning: this game includes some mild descriptions of gore, violence, and animal abuse",
