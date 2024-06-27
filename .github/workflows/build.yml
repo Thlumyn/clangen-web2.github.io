@@ -8,9 +8,6 @@ permissions:
 jobs:
   build_ubuntu_22_04:
     runs-on: ubuntu-22.04
-    env:
-      gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
-      gpg_private_key_passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
     steps:
       - uses: actions/checkout@v3
       - name: Install poetry
@@ -45,13 +42,6 @@ jobs:
         with:
           name: Clangen_Linux64_glibc2.35+.tar.xz
           path: Clangen_Linux64_glibc2.35+.tar.xz
-      - name: Import GPG key
-        id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@v5
-        if: ${{ env.gpg_private_key != '' && env.gpg_private_key_passphrase != '' }}
-        with:
-          gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
-          passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
       - name: Pybag setup
         run: |
           python3 -m pip install pygbag
