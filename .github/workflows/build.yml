@@ -24,7 +24,7 @@ jobs:
           architecture: "x64"
           cache: "poetry"
       - name: install dependencies
-        run: poetry install --with build -E
+        run: poetry install --with build
       - name: Configure version
         run: |
           echo "VERSION_NUMBER=${{ github.sha }}" >> $GITHUB_ENV
