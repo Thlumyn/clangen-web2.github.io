@@ -49,6 +49,7 @@
     "Ticked": ["spots", "pelt", "speckle", "freckle"],
     "Mackerel": ["stripe", "feather", "leaf", "stripe", "fern"],
     "Classic": ["stripe", "feather", "leaf", "stripe", "fern", "swirl"],
+    "Sokoke": ["stripe", "feather", "leaf", "stripe", "fern", "swirl"],
     "Agouti": ["back", "pelt", "fur"],
     "Singlestripe": ["stripe", "streak", "back", "shade", "stem", "shadow"],
     "Masked": ["stripe", "mask", "mask", "shade"],
@@ -66,6 +67,7 @@
     "ticked": ["spots", "pelt", "speckle", "freckle"],
     "mackerel": ["stripe", "feather", "fern", "shade"],
     "classic": ["stripe", "feather", "fern"],
+    "sokoke": ["stripe", "feather", "fern", "shade", "dapple"],
     "agouti": ["back", "pelt", "fur", "dapple", "splash"],
     "singlestripe": ["stripe", "back", "shade", "stem", "dapple"],
     "masked": ["stripe", "dapple", "mask", "mask", "shade"]

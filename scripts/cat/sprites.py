@@ -129,7 +129,7 @@ class Sprites:
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
-            'agouticolours', 'singlestripecolours', 'maskedcolours',
+            'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours',
             'shadersnewwhite', 'lightingnew',
             'whitepatches', 'tortiepatchesmasks',
             'fademask', 'fadestarclan', 'fadedarkforest',
@@ -200,7 +200,7 @@ class Sprites:
         color_types = [
             'singlecolours', 'tabbycolours', 'marbledcolours', 'rosettecolours',
             'smokecolours', 'tickedcolours', 'speckledcolours', 'bengalcolours',
-            'mackerelcolours', 'classiccolours', 'agouticolours',
+            'mackerelcolours', 'classiccolours', 'sokokecolours', 'agouticolours',
             'singlestripecolours', 'maskedcolours'
         ]
 

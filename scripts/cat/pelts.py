@@ -19,6 +19,7 @@ class Pelt:
         'Bengal': 'bengal',
         'Mackerel': 'mackerel',
         'Classic': 'classic',
+        'Sokoke': 'sokoke',
         'Agouti': 'agouti',
         'Singlestripe': 'singlestripe',
         'Masked': 'masked',
@@ -51,7 +52,7 @@ class Pelt:
                       'CHEST', 'ARMTAIL', 'SMOKE', 'GRUMPYFACE',
                       'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT']
     tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
-                   'classic', 'agouti', 'singlestripe', 'masked']
+                   'classic', 'sokoke', 'agouti', 'singlestripe', 'masked']
 
     pelt_length = ["short", "medium", "long"]
     eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD',
@@ -96,7 +97,7 @@ class Pelt:
         "BLACKNYLON", "SPIKESNYLON", "WHITENYLON", "PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON",
     ]
 
-    tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Agouti"]
+    tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti"]
     spotted = ["Speckled", "Rosette"]
     plain = ["SingleColour", "TwoColour", "Smoke", "Singlestripe"]
     exotic = ["Bengal", "Marbled", "Masked"]
@@ -985,6 +986,7 @@ class Pelt:
             "Agouti": "c_n tabby",
             "Singlestripe": "dorsal-striped c_n",
             "Rosette": "unusually spotted c_n",
+            "Sokoke": "c_n tabby",
             "Masked": "masked c_n tabby"
         }
 
