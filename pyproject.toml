@@ -19,6 +19,7 @@ pygame-gui = "0.6.12"
 platformdirs = "^3.3.0"
 requests = "^2.28.2"
 strenum = "^0.4.10"
+pygbag = "^0.9.1"
 
 [tool.poetry.group.test]
 optional = true

@@ -452,6 +452,20 @@ pygame-ce = ">=2.4.0"
 python-i18n = ">=0.3.9"
 
 [[package]]
+name = "pygbag"
+version = "0.9.1"
+description = "package and run python/pygame-ce wasm (and more) directly in modern web browsers."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pygbag-0.9.1-py3-none-any.whl", hash = "sha256:a577d5ec92963edd28af5270dfa782d036faee75645ad1ce30c04e2c52eecc11"},
+    {file = "pygbag-0.9.1.tar.gz", hash = "sha256:9c48b40d4bfc9b410f3bc3e5bb58df9378ca0f5330e63439bfe7c5c072e4ff32"},
+]
+
+[package.extras]
+sim = ["aioconsole", "aiohttp", "asyncio-socks-server"]
+
+[[package]]
 name = "pyinstaller"
 version = "6.8.0"
 description = "PyInstaller bundles a Python application and all its dependencies into a single package."
@@ -864,4 +878,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8,<3.13"
-content-hash = "e8ac89766fefd5384c30ece28dc9ca57369bddbe09b87f473a1a7ae76422fde6"
+content-hash = "ae671710118f5762e791799122d1852546f48929c5f591c891f5a1ed7ddd999d"
