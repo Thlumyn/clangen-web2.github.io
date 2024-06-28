@@ -13,6 +13,8 @@ from collections import Counter
 
 import ujson
 
+import scripts.platformwrapper as web
+
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
 from scripts.cat.history import History
 from scripts.cat.names import Name
@@ -300,6 +302,7 @@ class Events:
                 game.clan.save_clan()
                 game.clan.save_pregnancy(game.clan)
                 game.save_events()
+                web.pushdb()
             except:
                 SaveError(traceback.format_exc())
 

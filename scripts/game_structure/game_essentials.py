@@ -9,6 +9,8 @@ import ujson
 from scripts.event_class import Single_Event
 from scripts.housekeeping.datadir import get_save_dir, get_temp_dir
 
+import scripts.platformwrapper as web
+
 pygame.init()
 
 
@@ -500,6 +502,7 @@ class Game:
 
                     write_file.flush()
                     os.fsync(write_file.fileno())
+                    web.pushdb()
 
     def save_events(self):
         """
@@ -614,6 +617,7 @@ if not os.path.exists(get_save_dir() + "/settings.txt"):
     os.makedirs(get_save_dir(), exist_ok=True)
     with open(get_save_dir() + "/settings.txt", "w") as write_file:
         write_file.write("")
+        web.pushdb()
 game.load_settings()
 
 pygame.display.set_caption("Clan Generator")

@@ -16,6 +16,8 @@ from random import choice, randint
 import pygame
 import ujson
 
+import scripts.platformwrapper as web
+
 from scripts.cat.cats import Cat, cat_class
 from scripts.cat.history import History
 from scripts.cat.names import names
@@ -260,6 +262,9 @@ class Clan:
             self.all_clans.append(other_clan)
         self.save_clan()
         game.save_clanlist(self.name)
+
+        web.pushdb()
+
         game.switches["clan_list"] = game.read_clans()
         # if map_available:
         #    save_map(game.map_info, game.clan.name)
@@ -456,7 +461,7 @@ class Clan:
         TODO: DOCS
         """
         game.save_clanlist(clan)
-        quit(savesettings=False, clearevents=True)
+        web.reload()
 
     def save_clan(self):
         """
@@ -949,6 +954,7 @@ class Clan:
             with open(file_path, "w", encoding="utf-8") as rel_file:
                 json_string = ujson.dumps(herbs, indent=4)
                 rel_file.write(json_string)
+                web.pushdb()
             clan.herbs = herbs
 
     def save_herbs(self, clan):
@@ -1024,6 +1030,7 @@ class Clan:
                 with open(file_path, "w", encoding="utf-8") as rel_file:
                     json_string = ujson.dumps(clan.primary_disaster, indent=4)
                     rel_file.write(json_string)
+                    web.pushdb()
         except:
             clan.primary_disaster = None
 
@@ -1054,6 +1061,7 @@ class Clan:
                 with open(file_path, "w", encoding="utf-8") as rel_file:
                     json_string = ujson.dumps(clan.secondary_disaster, indent=4)
                     rel_file.write(json_string)
+                    web.pushdb()
 
         except:
             clan.secondary_disaster = None

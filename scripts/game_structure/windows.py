@@ -12,6 +12,8 @@ import pygame
 import pygame_gui
 from pygame_gui.elements import UIWindow
 
+import scripts.platformwrapper as web
+
 from scripts.cat.history import History
 from scripts.cat.names import Name
 from scripts.game_structure import image_cache
@@ -290,6 +292,7 @@ class SaveCheck(UIWindow):
                     game.clan.save_clan()
                     game.clan.save_pregnancy(game.clan)
                     game.save_events()
+                    web.pushdb()
                     self.save_button_saving_state.hide()
                     self.save_button_saved_state.show()
             elif event.ui_element == self.back_button:

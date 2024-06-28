@@ -5,6 +5,8 @@ from copy import deepcopy
 import pygame
 import pygame_gui
 
+import scripts.platformwrapper as web
+
 from scripts.cat.cats import Cat
 from scripts.game_structure import image_cache
 from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y
@@ -56,6 +58,7 @@ class ClanScreen(Screens):
                     game.clan.save_pregnancy(game.clan)
                     game.save_events()
                     game.save_settings()
+                    web.pushdb()
                     game.switches['saved_clan'] = True
                     self.update_buttons_and_text()
                 except RuntimeError:

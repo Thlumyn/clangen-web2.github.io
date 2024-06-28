@@ -1,0 +1,17 @@
+{
+    "background_color": "#cec2a8",
+    "description": "Fan-edit of the warrior cat clangen game",
+    "dir": "ltr",
+    "display": "fullscreen",
+    "name": "Clangen",
+    "orientation": "any",
+    "scope": "/clangen",
+    "short_name": "Clangen",
+    "start_url": "/clangen",
+    "theme_color": "#ac9d72",
+    "categories": ["games"],
+    "screenshots": [],
+    "shortcuts": [],
+    "lang": "en",
+    "display_override": []
+  }
