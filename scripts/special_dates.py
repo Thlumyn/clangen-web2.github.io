@@ -50,12 +50,10 @@ class SpecialDate(Enum):
     """
     Enum keeping track of registered 'special dates'.
     """
-    HALLOWEEN = auto()
     NEW_YEARS = auto()
 
 # Maps SpecialDate enums to actual DateInfo classes.
 _date_map: Dict[SpecialDate, DateInfo] = {
-    SpecialDate.HALLOWEEN: DateInfo("halloween", (10, 21), (11, 7)),
     SpecialDate.NEW_YEARS: DateInfo("new_years", (1, 1))
 }
 
@@ -67,8 +65,6 @@ def is_today(date: SpecialDate) -> bool:
     """
     if not game.settings["special_dates"]:
         return False
-    if game.config["fun"].get("always_halloween", False):
-        return True
 
     d = _date_map.get(date, None)
     return d and d.in_range(_today)
@@ -82,8 +78,6 @@ def get_special_date() -> Union[DateInfo, None]:
     """
     if not game.settings["special_dates"]:
         return None
-    if game.config["fun"].get("always_halloween", False):
-        return _date_map[SpecialDate.HALLOWEEN]
 
     for _, date in _date_map.items():
         if date.in_range(_today):
