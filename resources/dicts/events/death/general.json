@@ -2653,7 +2653,7 @@
     },
     {
         "event_id": "gen_death_hawk_any1",
-        "location": ["forest:camp1_camp4", "mountainous:camp1_camp4"],
+        "location": ["forest:camp1", "mountainous:camp1"],
         "season": [
             "any"
         ],
@@ -2679,7 +2679,7 @@
     },
     {
         "event_id": "gen_death_hawk_any2",
-        "location": ["forest:camp1_camp4", "mountainous:camp1_camp4"],
+        "location": ["forest:camp1", "mountainous:camp1"],
         "season": [
             "any"
         ],
@@ -2752,7 +2752,7 @@
     },
     {
         "event_id": "gen_death_eagle_anylead3",
-        "location": ["forest:camp1_camp4", "mountainous:camp1_camp4"],
+        "location": ["forest:camp1", "mountainous:camp1"],
         "season": [
             "any"
         ],

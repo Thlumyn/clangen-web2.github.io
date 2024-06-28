@@ -1879,7 +1879,7 @@
     {
         "event_id": "gen_injury_sprain_anymultiage6",
         "location": [
-            "forest:camp1_camp2_camp4"
+            "forest:camp1_camp2"
         ],
         "season": [
             "newleaf",

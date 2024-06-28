@@ -72,7 +72,7 @@
     },
     {
         "event_id": "gen_death_owl_anylead3",
-        "location": ["forest:camp1_camp2_camp4"],
+        "location": ["forest:camp1_camp2"],
         "season": [
             "any"
         ],

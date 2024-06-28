@@ -230,20 +230,6 @@
             }
         }
     },
-    "#open_data_directory_button": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/data_directory.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/data_directory_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/data_directory_hover.png"
-            }
-        }
-    },
     "#greenleaf_toggle_button": {
         "prototype": "#image_button",
         "images": {
@@ -3738,23 +3724,6 @@
             }
         }
     },
-    "#classic_tab": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/classic_camp.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/classic_camp_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/classic_camp_hover.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/classic_camp_unavailable.png"
-            }
-        }
-    },
     "#gully_tab": {
         "prototype": "#image_button",
         "images": {
@@ -3905,74 +3874,6 @@
             },
             "disabled_image": {
                 "path": "resources/images/buttons/tunnel_camp_unavailable.png"
-            }
-        }
-    },
-    "#tidepool_tab": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/tidepool_camp.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/tidepool_camp_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/tidepool_camp_hover.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/tidepool_camp_unavailable.png"
-            }
-        }
-    },
-    "#tidal_cave_tab": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/tidal_cave_camp.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/tidal_cave_camp_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/tidal_cave_camp_hover.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/tidal_cave_camp_unavailable.png"
-            }
-        }
-    },
-    "#shipwreck_tab": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/shipwreck_camp.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/shipwreck_camp_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/shipwreck_camp_hover.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/shipwreck_camp_unavailable.png"
-            }
-        }
-    },
-	"#wasteland_tab": {
-        "prototype": "#image_button",
-        "images": {
-            "normal_image": {
-                "path": "resources/images/buttons/wastelands_camp.png"
-            },
-            "hovered_image": {
-                "path": "resources/images/buttons/wastelands_camp_hover.png"
-            },
-            "selected_image": {
-                "path": "resources/images/buttons/wastelands_camp_hover.png"
-            },
-            "disabled_image": {
-                "path": "resources/images/buttons/wastelands_camp_unavailable.png"
             }
         }
     },

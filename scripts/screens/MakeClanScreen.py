@@ -777,7 +777,7 @@ class MakeClanScreen(Screens):
             self.tabs["tab1"] = UIImageButton(
                 scale(pygame.Rect((190, 360), (308, 60))),
                 "",
-                object_id="#classic_tab",
+                object_id="#lakeside_tab",
                 manager=MANAGER,
             )
             self.tabs["tab2"] = UIImageButton(
@@ -790,12 +790,6 @@ class MakeClanScreen(Screens):
                 scale(pygame.Rect((190, 500), (308, 60))),
                 "",
                 object_id="#grotto_tab",
-                manager=MANAGER,
-            )
-            self.tabs["tab4"] = UIImageButton(
-                scale(pygame.Rect((170, 570), (308, 60))),
-                "",
-                object_id="#lakeside_tab",
                 manager=MANAGER,
             )
         elif self.biome_selected == "Mountainous":
