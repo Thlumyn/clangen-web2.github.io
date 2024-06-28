@@ -14,7 +14,6 @@ keywords = ["warriorcats", "fanedit", "game", "pygame"]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.13"
-pygame-ce = "^2.2.1"
 ujson = "^5.7.0"
 pygame-gui = "0.6.12"
 platformdirs = "^3.3.0"
@@ -30,10 +29,6 @@ pylint = "^2.17.3"
 optional = true
 [tool.poetry.group.build.dependencies]
 pyinstaller = "^6.6.0"
-pillow = "^9.5.0"
-setuptools = "^67.7.2"
-wheel = "^0.40.0"
-
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.2.2"
